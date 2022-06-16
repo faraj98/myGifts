@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bestprice" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تسجيل الدخول"
+        android:textSize="16sp"
+        android:textColor="#FF0000"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:drawableStart="@drawable/ic_baseline_person"
+        android:drawablePadding="8dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/around_et"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:inputType="textPersonName"
+        android:hint="ايميل المستخدم "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:drawableStart="@drawable/ic_baseline_key"
+        android:drawablePadding="8dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/around_et"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:inputType="textPersonName"
+        android:hint="كلمة السر"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="تسجيل الدخول"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/btn_cover"
+        android:backgroundTint="#FF0000"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="أو"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#40000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imageButton3"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text=" فيسبوك"
+        android:background="@drawable/btn_cover"
+        android:paddingHorizontal="80dp"
+        android:drawablePadding="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:drawableStart="@drawable/facebook"
+        style="?android:textAppearanceSmall"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imageButton4"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:text="حساب جوجل"
+        android:background="@drawable/btn_cover"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
+        android:paddingHorizontal="80dp"
+        android:drawablePadding="16dp"
+        android:drawableStart="@drawable/google"
+        style="?android:textAppearanceSmall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FF0000"
+            android:text="أنشئ حساباً" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="ليس لديك حساب بعد؟ " />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

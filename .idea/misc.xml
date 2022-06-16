@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/GiftsApp/app/src/main/res/drawable-hdpi/ic_further_arrow.xml" value="0.108" />
+        <entry key="..\:/GiftsApp/app/src/main/res/drawable/around_et.xml" value="0.108" />
+        <entry key="..\:/GiftsApp/app/src/main/res/drawable/arounded.xml" value="0.108" />
+        <entry key="..\:/GiftsApp/app/src/main/res/drawable/back_btn.xml" value="0.108" />
+        <entry key="..\:/GiftsApp/app/src/main/res/drawable/btn_cover.xml" value="0.108" />
+        <entry key="..\:/GiftsApp/app/src/main/res/drawable/btn_shape.xml" value="0.108" />
+        <entry key="..\:/GiftsApp/app/src/main/res/drawable/cover.xml" value="0.199" />
+        <entry key="..\:/GiftsApp/app/src/main/res/drawable/cover_around.xml" value="0.106" />
+        <entry key="..\:/GiftsApp/app/src/main/res/drawable/shape_light_green.xml" value="0.106" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/Product_item.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_category_details.xml" value="0.15353260869565216" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_home.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_login.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_main_categories.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_otp.xml" value="0.2351313969571231" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_product_details.xml" value="0.18" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_splash.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_store_details.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/activity_welcome.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/category_item.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/item_full_details.xml" value="0.33" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/lastOrder_item.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/lastorder_item.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/main_category_item.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/product_item.xml" value="0.5" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/shop_item.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/store_detail_item.xml" value="0.33" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/stores_item.xml" value="0.15942028985507245" />
+        <entry key="..\:/GiftsApp/app/src/main/res/layout/toolbar.xml" value="0.18" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
