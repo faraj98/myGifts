@@ -1,27 +1,34 @@
 package com.example.giftsapp.models;
 
-public class MainCategory {
+public class Category {
 
-    int id ;
+    String id ;
     int img ;
+    String urlImage;
     String title ;
 
-    public MainCategory(int id, int img, String title) {
+    public Category(String id, int img, String title) {
         this.id = id;
         this.img = img;
         this.title = title;
     }
 
-    public MainCategory(int img, String title) {
+    public Category(String id, String urlImage, String title) {
+        this.id = id;
+        this.urlImage = urlImage;
+        this.title = title;
+    }
+
+    public Category(int img, String title) {
         this.img = img;
         this.title = title;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

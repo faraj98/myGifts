@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".storeDetailsActivity">
+    tools:context=".MallDetailsActivity">
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imageViewMallDetailsActivity"
         android:layout_width="0dp"
         android:layout_height="250dp"
         android:scaleType="fitXY"
@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ffff" />
+        />
 
     <TextView
         android:id="@+id/textView7"
@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMallDetailsActivity" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvsd"

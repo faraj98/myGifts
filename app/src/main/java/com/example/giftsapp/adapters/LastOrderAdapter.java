@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,17 +13,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giftsapp.R;
-import com.example.giftsapp.models.category;
-import com.example.giftsapp.models.lastOrder;
+import com.example.giftsapp.models.LastOrder;
 
 import java.util.ArrayList;
 
-public class lastOrderAdapter extends RecyclerView.Adapter<lastOrderAdapter.lastOrderViewHolder> {
+public class LastOrderAdapter extends RecyclerView.Adapter<LastOrderAdapter.lastOrderViewHolder> {
 
     Context context ;
-    ArrayList<lastOrder> lastOrders ;
+    ArrayList<LastOrder> lastOrders ;
 
-    public lastOrderAdapter(Context context, ArrayList<lastOrder> lastOrders) {
+    public LastOrderAdapter(Context context, ArrayList<LastOrder> lastOrders) {
         this.context = context;
         this.lastOrders = lastOrders;
     }
@@ -40,7 +38,7 @@ public class lastOrderAdapter extends RecyclerView.Adapter<lastOrderAdapter.last
     @Override
     public void onBindViewHolder(@NonNull lastOrderViewHolder holder, int position) {
 
-        final lastOrder ss = lastOrders.get(position);
+        final LastOrder ss = lastOrders.get(position);
 
 
 

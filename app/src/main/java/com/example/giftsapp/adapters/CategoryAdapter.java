@@ -11,17 +11,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giftsapp.R;
-import com.example.giftsapp.models.category;
-import com.example.giftsapp.models.store;
+import com.example.giftsapp.models.Category;
 
 import java.util.ArrayList;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder> {
 
     Context context ;
-    ArrayList<category> categories ;
+    ArrayList<Category> categories ;
 
-    public CategoryAdapter(Context context, ArrayList<category> categories) {
+    public CategoryAdapter(Context context, ArrayList<Category> categories) {
         this.context = context;
         this.categories = categories;
     }
@@ -37,7 +36,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
 
-        final category ss = categories.get(position);
+        final Category ss = categories.get(position);
 
 
 

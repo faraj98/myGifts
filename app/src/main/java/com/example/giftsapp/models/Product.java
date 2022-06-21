@@ -1,6 +1,6 @@
 package com.example.giftsapp.models;
 
-public class product {
+public class Product {
 
     int id ;
     int img ;
@@ -9,7 +9,7 @@ public class product {
     String oldPrice ;
     String newPrice ;
 
-    public product(int id, int img, String title, String restrant_name, String oldPrice, String newPrice) {
+    public Product(int id, int img, String title, String restrant_name, String oldPrice, String newPrice) {
         this.id = id;
         this.img = img;
         this.title = title;
@@ -18,7 +18,15 @@ public class product {
         this.newPrice = newPrice;
     }
 
-    public product( int img, String title, String restrant_name, String oldPrice, String newPrice) {
+    public Product(int img, String title, String oldPrice, String newPrice) {
+
+        this.img = img;
+        this.title = title;
+        this.oldPrice = oldPrice;
+        this.newPrice = newPrice;
+    }
+
+    public Product(int img, String title, String restrant_name, String oldPrice, String newPrice) {
         this.img = img;
         this.title = title;
         this.restrant_name = restrant_name;

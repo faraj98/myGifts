@@ -6,25 +6,32 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.giftsapp.Interface.RecycleViewOnItemClick;
 import com.example.giftsapp.R;
-import com.example.giftsapp.models.favourite;
-import com.example.giftsapp.models.store;
+import com.example.giftsapp.models.Mall;
+import com.example.giftsapp.models.Shop;
 
 import java.util.ArrayList;
 
-public class storeAdapter extends RecyclerView.Adapter<storeAdapter.StoreViewHolder> {
+public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.StoreViewHolder> {
 
     Context context ;
-    ArrayList<store> stores ;
+    ArrayList<Mall> stores ;
+    RecycleViewOnItemClick recycleViewOnItemClick;
 
-    public storeAdapter(Context context, ArrayList<store> stores) {
+    public StoreAdapter(Context context, ArrayList<Mall> stores) {
         this.context = context;
         this.stores = stores;
+    }
+
+    public StoreAdapter(Context context, ArrayList<Mall> stores, RecycleViewOnItemClick recycleViewOnItemClick) {
+        this.context = context;
+        this.stores = stores;
+        this.recycleViewOnItemClick = recycleViewOnItemClick;
     }
 
     @NonNull
@@ -38,14 +45,14 @@ public class storeAdapter extends RecyclerView.Adapter<storeAdapter.StoreViewHol
     @Override
     public void onBindViewHolder(@NonNull StoreViewHolder holder, int position) {
 
-        final store ss = stores.get(position);
+        final Mall ss = stores.get(position);
 
 
 
 
-        holder.img.setImageResource(ss.getImg());
+        holder.img.setImageResource(ss.getImage());
 
-        holder.title.setText(ss.getTitle() );
+        holder.title.setText(ss.getName() );
 
 
 
@@ -66,7 +73,12 @@ public class storeAdapter extends RecyclerView.Adapter<storeAdapter.StoreViewHol
 
             img = itemView.findViewById(R.id.store_img);
             title  =itemView.findViewById(R.id.store_title);
-
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    recycleViewOnItemClick.onItemClick(getAdapterPosition());
+                }
+            });
         }
     }
 }

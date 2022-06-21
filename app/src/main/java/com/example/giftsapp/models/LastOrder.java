@@ -1,18 +1,18 @@
 package com.example.giftsapp.models;
 
-public class category {
+public class LastOrder {
 
     int id ;
     int img ;
     String title ;
 
-    public category(int id, int img, String title) {
+    public LastOrder(int id, int img, String title) {
         this.id = id;
         this.img = img;
         this.title = title;
     }
 
-    public category(int img, String title) {
+    public LastOrder(int img, String title) {
         this.img = img;
         this.title = title;
     }

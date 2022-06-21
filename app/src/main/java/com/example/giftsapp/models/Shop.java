@@ -1,18 +1,18 @@
 package com.example.giftsapp.models;
 
-public class store {
+public class Shop {
 
     int id ;
     int img ;
     String title ;
 
-    public store(int id, int img, String title) {
+    public Shop(int id, int img, String title) {
         this.id = id;
         this.img = img;
         this.title = title;
     }
 
-    public store( int img, String title) {
+    public Shop(int img, String title) {
         this.img = img;
         this.title = title;
     }

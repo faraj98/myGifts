@@ -13,8 +13,10 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/splash" />
 
     <ImageView
@@ -42,7 +44,7 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextLoginName"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:drawableStart="@drawable/ic_baseline_person"
@@ -60,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editTextLoginpassword"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:drawableStart="@drawable/ic_baseline_key"
@@ -75,12 +77,12 @@
         android:hint="كلمة السر"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginName" />
 
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/buttonLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="تسجيل الدخول"
@@ -91,7 +93,7 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginpassword" />
 
     <TextView
         android:id="@+id/textView4"
@@ -104,27 +106,26 @@
         android:textColor="#40000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/imageButtonfacebook"
+        style="?android:textAppearanceSmall"
         android:layout_width="333dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text=" فيسبوك"
+        android:layout_marginTop="32dp"
         android:background="@drawable/btn_cover"
-        android:paddingHorizontal="80dp"
-        android:drawablePadding="16dp"
-        android:layout_marginTop="8dp"
         android:backgroundTint="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
         android:drawableStart="@drawable/facebook"
-        style="?android:textAppearanceSmall"
-        />
+        android:drawablePadding="16dp"
+        android:paddingHorizontal="80dp"
+        android:text=" فيسبوك"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imageButtongoogle"
         android:layout_width="333dp"
         android:layout_height="wrap_content"
         android:text="حساب جوجل"
@@ -137,25 +138,28 @@
         style="?android:textAppearanceSmall"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonfacebook"
         />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4">
+        app:layout_constraintTop_toBottomOf="@+id/imageButtongoogle">
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewtosignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="#FF0000"
-            android:text="أنشئ حساباً" />
+            android:text="أنشئ حساباً"
+            android:textColor="#FF0000" />
 
         <TextView
             android:id="@+id/textView6"

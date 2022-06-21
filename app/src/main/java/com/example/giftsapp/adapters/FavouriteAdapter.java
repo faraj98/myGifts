@@ -12,16 +12,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.giftsapp.R;
-import com.example.giftsapp.models.favourite;
+import com.example.giftsapp.models.Favourite;
 
 import java.util.ArrayList;
 
-public class favouriteAdapter extends RecyclerView.Adapter<favouriteAdapter.favouriteViewHolder> {
+public class FavouriteAdapter extends RecyclerView.Adapter<FavouriteAdapter.favouriteViewHolder> {
 
     Context context ;
-    ArrayList<favourite> favourite ;
+    ArrayList<Favourite> favourite ;
 
-    public favouriteAdapter(Context context, ArrayList<favourite> favourite) {
+    public FavouriteAdapter(Context context, ArrayList<Favourite> favourite) {
         this.context = context;
         this.favourite = favourite;
     }
@@ -37,7 +37,7 @@ public class favouriteAdapter extends RecyclerView.Adapter<favouriteAdapter.favo
     @Override
     public void onBindViewHolder(@NonNull favouriteViewHolder holder, int position) {
 
-        final favourite ss = favourite.get(position);
+        final Favourite ss = favourite.get(position);
 
 
 

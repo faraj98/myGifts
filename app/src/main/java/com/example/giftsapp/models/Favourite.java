@@ -1,6 +1,6 @@
 package com.example.giftsapp.models;
 
-public class favourite {
+public class Favourite {
 
     int id ;
     int img ;
@@ -10,7 +10,7 @@ public class favourite {
     String descireption ;
     String prise ;
 
-    public favourite(int id, int img, int iconCart, int heart, String title, String descireption, String prise) {
+    public Favourite(int id, int img, int iconCart, int heart, String title, String descireption, String prise) {
         this.id = id;
         this.img = img;
         this.iconCart = iconCart;
@@ -20,7 +20,7 @@ public class favourite {
         this.prise = prise;
     }
 
-    public favourite( int img, int iconCart, int heart, String title, String descireption, String prise) {
+    public Favourite(int img, int iconCart, int heart, String title, String descireption, String prise) {
         this.img = img;
         this.iconCart = iconCart;
         this.heart = heart;
@@ -29,7 +29,7 @@ public class favourite {
         this.prise = prise;
     }
 
-    public favourite(int img, String title, String descireption, String prise) {
+    public Favourite(int img, String title, String descireption, String prise) {
         this.img = img;
         this.title = title;
         this.descireption = descireption;
