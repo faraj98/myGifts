@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.giftsapp">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.giftsapp" >
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <queries> <provider android:authorities="com.facebook.katana.provider.PlatformProvider" /> </queries>
+
+
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="merge"/>
 
     <application
         android:allowBackup="true"
@@ -8,59 +16,91 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GiftsApp">
-        <activity
-            android:name=".otpActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        android:theme="@style/Theme.GiftsApp" >
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB1o1Zms1_RyOf1fd3LcyprvCyEWEHmgmg" />
+
+        <activity
+            android:name=".Activity.MapsActivity"
+            android:exported="true"
+            android:label="@string/title_activity_maps" >
+
         </activity>
         <activity
-            android:name=".profileActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:name=".Activity.MallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.otpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ProductDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.MallDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:exported="true" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
-            android:name=".productDetailsActivity"
-            android:exported="true"></activity>
+            android:name=".Activity.WelcomeActivity"
+            android:exported="true" > <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
         <activity
-            android:name=".storeDetailsActivity"
-            android:exported="true"></activity>
+            android:name=".Activity.SplashActivity"
+            android:exported="true">
+
+
+        </activity>
         <activity
-            android:name=".LoginActivity"
-            android:exported="true"></activity>
+            android:name=".Activity.MainCategoriesActivity"
+            android:exported="true" />
         <activity
-            android:name=".signUpActivity"
-            android:exported="true"></activity>
+            android:name=".Activity.HomeActivity"
+            android:exported="true" >
+
+
+        </activity>
         <activity
-            android:name=".WelcomeActivity"
-            android:exported="true"></activity>
+            android:name=".Activity.CategoryDetailsActivity"
+            android:exported="true" />
         <activity
-            android:name=".SplashActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".MainCategoriesActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".HomeActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".CategoryDetailsActivity"
-            android:exported="true"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:name=".Activity.FavouriteActivity"
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <service android:name=".Serveis.MapService"
+            tools:ignore="Instantiatable" />
+
     </application>
 
 </manifest>

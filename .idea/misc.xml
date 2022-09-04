@@ -3,6 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1765" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/drawable/ic_baseline_key.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_category_details.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_home.xml" value="0.18" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_main_categories.xml" value="0.19791666666666666" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_mall.xml" value="0.19791666666666666" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_mall_details.xml" value="0.14990942028985507" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_maps.xml" value="0.19791666666666666" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_otp.xml" value="0.16" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_product_details.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_profile.xml" value="0.11885245901639344" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_splash.xml" value="0.17980072463768115" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/activity_welcome.xml" value="0.33" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/category_item.xml" value="0.17980072463768115" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/item_full_details.xml" value="0.5" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/lastorder_item.xml" value="0.18" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/main_category_item.xml" value="0.17980072463768115" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/mall_item.xml" value="0.14990942028985507" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/marker.xml" value="0.17980072463768115" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/product_item.xml" value="0.17980072463768115" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/stores_item.xml" value="0.17980072463768115" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/layout/toolbar.xml" value="0.17980072463768115" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/menu/home_menu.xml" value="0.18854166666666666" />
+        <entry key="..\:/AndroidProjects/myGifts/app/src/main/res/menu/map_menu.xml" value="0.1" />
         <entry key="..\:/GiftsApp/app/src/main/res/drawable-hdpi/ic_further_arrow.xml" value="0.108" />
         <entry key="..\:/GiftsApp/app/src/main/res/drawable/around_et.xml" value="0.108" />
         <entry key="..\:/GiftsApp/app/src/main/res/drawable/arounded.xml" value="0.108" />

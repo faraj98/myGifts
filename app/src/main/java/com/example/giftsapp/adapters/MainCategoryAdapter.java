@@ -10,18 +10,25 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.giftsapp.Interface.RecycleViewOnItemClick;
 import com.example.giftsapp.R;
-import com.example.giftsapp.models.MainCategory;
-import com.example.giftsapp.models.category;
+import com.example.giftsapp.models.Category;
 
 import java.util.ArrayList;
 
 public class MainCategoryAdapter extends RecyclerView.Adapter<MainCategoryAdapter.MainCategoryViewHolder> {
 
     Context context ;
-    ArrayList<MainCategory> mainCategories ;
+    ArrayList<Category> mainCategories ;
+    RecycleViewOnItemClick recycleViewOnItemClick;
 
-    public MainCategoryAdapter(Context context, ArrayList<MainCategory> mainCategories) {
+    public MainCategoryAdapter(Context context, ArrayList<Category> mainCategories, RecycleViewOnItemClick recycleViewOnItemClick) {
+        this.context = context;
+        this.mainCategories = mainCategories;
+        this.recycleViewOnItemClick = recycleViewOnItemClick;
+    }
+
+    public MainCategoryAdapter(Context context, ArrayList<Category> mainCategories) {
         this.context = context;
         this.mainCategories = mainCategories;
     }
@@ -37,7 +44,7 @@ public class MainCategoryAdapter extends RecyclerView.Adapter<MainCategoryAdapte
     @Override
     public void onBindViewHolder(@NonNull MainCategoryViewHolder holder, int position) {
 
-        final MainCategory ss = mainCategories.get(position);
+        final Category ss = mainCategories.get(position);
 
 
 
@@ -65,6 +72,12 @@ public class MainCategoryAdapter extends RecyclerView.Adapter<MainCategoryAdapte
 
             img = itemView.findViewById(R.id.Main_category_img);
             title  =itemView.findViewById(R.id.Main_category_title);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    recycleViewOnItemClick.onItemClickc(getAdapterPosition());
+                }
+            });
 
         }
     }

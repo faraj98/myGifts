@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".Activity.LoginActivity">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -13,8 +13,10 @@
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/splash" />
 
     <ImageView
@@ -31,7 +33,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="تسجيل الدخول"
+        android:text="صفحة تسجيل الدخول"
         android:textSize="16sp"
         android:textColor="#FF0000"
         android:layout_marginTop="32dp"
@@ -42,10 +44,10 @@
 
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTextLoginName"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:drawableStart="@drawable/ic_baseline_person"
+        android:drawableStart="@drawable/ic_baseline_email_24"
         android:drawablePadding="8dp"
         android:layout_marginHorizontal="20dp"
         android:background="@drawable/around_et"
@@ -53,14 +55,14 @@
         android:paddingEnd="8dp"
         android:ems="10"
         android:layout_marginTop="32dp"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:hint="ايميل المستخدم "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/editTextLoginpassword"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:drawableStart="@drawable/ic_baseline_key"
@@ -71,16 +73,16 @@
         android:paddingEnd="8dp"
         android:ems="10"
         android:layout_marginTop="16dp"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:hint="كلمة السر"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginName" />
 
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/buttonLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="تسجيل الدخول"
@@ -91,71 +93,47 @@
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoginpassword" />
+
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="أو"
-        android:layout_marginTop="8dp"
+        android:textColor="#40000000"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:textColor="#40000000"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/imageButton3"
-        android:layout_width="333dp"
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/LoginButtonGoogle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text=" فيسبوك"
-        android:background="@drawable/btn_cover"
-        android:paddingHorizontal="80dp"
-        android:drawablePadding="16dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:drawableStart="@drawable/facebook"
-        style="?android:textAppearanceSmall"
-        />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/imageButton4"
-        android:layout_width="333dp"
-        android:layout_height="wrap_content"
-        android:text="حساب جوجل"
-        android:background="@drawable/btn_cover"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/white"
-        android:paddingHorizontal="80dp"
-        android:drawablePadding="16dp"
-        android:drawableStart="@drawable/google"
-        style="?android:textAppearanceSmall"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4">
+        app:layout_constraintTop_toBottomOf="@+id/LoginButtonGoogle">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#FF0000"
-            android:text="أنشئ حساباً" />
 
         <TextView
             android:id="@+id/textView6"
@@ -164,6 +142,14 @@
             android:layout_weight="1"
             android:gravity="end"
             android:text="ليس لديك حساب بعد؟ " />
+
+        <TextView
+            android:id="@+id/textViewtosignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="أنشئ حساباً"
+            android:textColor="#FF0000" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

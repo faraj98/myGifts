@@ -136,50 +136,6 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:layout_weight="1"
-                            android:orientation="horizontal">
-
-
-
-                            <Button
-                                android:id="@+id/datee"
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:text="hiiii"
-                                android:textColor="@color/black"
-                                android:background="@drawable/cover_around"
-                                android:gravity="center"
-                                android:textSize="22sp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/cairo"
-                                android:text="college : "
-
-                                android:textStyle="bold"
-                                android:textColor="@color/black"
-                                android:textSize="10sp" />
-
-                            <Button
-                                android:layout_width="25dp"
-                                android:layout_height="25dp"
-                                android:text="_"
-                                android:gravity="center"
-                                android:background="@drawable/cover_around"
-                                android:textStyle="bold"
-                                android:textColor="@color/black"
-                                android:textSize="22sp"
-                                />
-
-
-
-
-                        </LinearLayout>
-                        <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="5dp"

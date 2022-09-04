@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity">
+    tools:context=".Activity.WelcomeActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -60,14 +60,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/welcombuttonsignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_shape"
             android:text="التسجيل" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/welcombuttonlogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_shape"
