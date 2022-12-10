@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "918252664372",
+    "project_id": "graduation-project-d8efd",
+    "storage_bucket": "graduation-project-d8efd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918252664372:android:552c96e0c50d374d877c61",
+        "android_client_info": {
+          "package_name": "com.example.giftsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918252664372-dr5ned763vfrucmkm91ukovd7dp91c03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWds5UKJ01E9DcNtbeY9w2nFxa0dobnNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918252664372-dr5ned763vfrucmkm91ukovd7dp91c03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
