@@ -6,5 +6,8 @@
     <string name="fb_login_protocol_scheme">fb1234</string>
     <string name="facebook_client_token">56789</string>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 </resources>

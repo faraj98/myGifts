@@ -26,6 +26,10 @@ public class FavouriteAdapter extends RecyclerView.Adapter<FavouriteAdapter.favo
         this.favourite = favourite;
     }
 
+    public FavouriteAdapter() {
+
+    }
+
     @NonNull
     @Override
     public favouriteViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

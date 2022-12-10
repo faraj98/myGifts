@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.giftsapp.Interface.RecycleViewOnItemClick;
 import com.example.giftsapp.R;
 import com.example.giftsapp.models.Category;
 
@@ -19,7 +20,18 @@ public class MainCategoryAdapter extends RecyclerView.Adapter<MainCategoryAdapte
 
     Context context ;
     ArrayList<Category> mainCategories ;
+<<<<<<< HEAD
 
+=======
+    RecycleViewOnItemClick recycleViewOnItemClick;
+
+    public MainCategoryAdapter(Context context, ArrayList<Category> mainCategories, RecycleViewOnItemClick recycleViewOnItemClick) {
+        this.context = context;
+        this.mainCategories = mainCategories;
+        this.recycleViewOnItemClick = recycleViewOnItemClick;
+    }
+
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
     public MainCategoryAdapter(Context context, ArrayList<Category> mainCategories) {
         this.context = context;
         this.mainCategories = mainCategories;
@@ -64,6 +76,12 @@ public class MainCategoryAdapter extends RecyclerView.Adapter<MainCategoryAdapte
 
             img = itemView.findViewById(R.id.Main_category_img);
             title  =itemView.findViewById(R.id.Main_category_title);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    recycleViewOnItemClick.onItemClickc(getAdapterPosition());
+                }
+            });
 
         }
     }

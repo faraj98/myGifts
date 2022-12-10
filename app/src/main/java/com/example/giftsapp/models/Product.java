@@ -1,5 +1,12 @@
 package com.example.giftsapp.models;
 
+<<<<<<< HEAD
+=======
+import com.example.giftsapp.R;
+
+import java.util.ArrayList;
+
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 public class Product {
 
     int id ;
@@ -9,6 +16,12 @@ public class Product {
     String oldPrice ;
     String newPrice ;
 
+<<<<<<< HEAD
+=======
+    public Product() {
+    }
+
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
     public Product(int id, int img, String title, String restrant_name, String oldPrice, String newPrice) {
         this.id = id;
         this.img = img;
@@ -81,4 +94,38 @@ public class Product {
     public void setNewPrice(String newPrice) {
         this.newPrice = newPrice;
     }
+<<<<<<< HEAD
+=======
+
+    public ArrayList<Product> getAllProduct(){
+        ArrayList<Product> products = new ArrayList<>();
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+        products.add(new Product(R.drawable.shopp  , "مسخن فلسطيني" , "مطعم مهران" , "السعر القديم : 60ش" , " السعر الجديد : 50ش"));
+
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+        products.add(new Product(R.drawable.submah  , "وجبة أفخاذ دجاج" , "السعر القديم : 30ش" , " السعر الجديد : 25ش"));
+
+        return products;
+    }
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 }

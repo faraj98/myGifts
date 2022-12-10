@@ -1,5 +1,12 @@
 package com.example.giftsapp.models;
 
+<<<<<<< HEAD
+=======
+import com.example.giftsapp.R;
+
+import java.util.ArrayList;
+
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 public class Favourite {
 
     int id ;
@@ -10,6 +17,12 @@ public class Favourite {
     String descireption ;
     String prise ;
 
+<<<<<<< HEAD
+=======
+    public Favourite() {
+    }
+
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
     public Favourite(int id, int img, int iconCart, int heart, String title, String descireption, String prise) {
         this.id = id;
         this.img = img;
@@ -90,5 +103,18 @@ public class Favourite {
 
     public void setPrise(String prise) {
         this.prise = prise;
+    }
+
+    public ArrayList<Favourite> getAllFavourite(){
+
+        ArrayList<Favourite> favourites = new ArrayList<>();
+        favourites.add(new Favourite(R.drawable.iimg  , "apple" , "applesssd"  , "6$"));
+        favourites.add(new Favourite(R.drawable.iimg  , "apple" , "applesssd"  , "6$"));
+        favourites.add(new Favourite(R.drawable.iimg  , "apple" , "applesssd"  , "6$"));
+        favourites.add(new Favourite(R.drawable.iimg  , "apple" , "applesssd"  , "6$"));
+        favourites.add(new Favourite(R.drawable.iimg  , "apple" , "applesssd"  , "6$"));
+        favourites.add(new Favourite(R.drawable.iimg  , "apple" , "applesssd"  , "6$"));
+        favourites.add(new Favourite(R.drawable.iimg  , "apple" , "applesssd"  , "6$"));
+        return  favourites;
     }
 }

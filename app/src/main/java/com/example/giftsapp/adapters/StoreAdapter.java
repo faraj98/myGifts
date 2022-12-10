@@ -13,7 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.giftsapp.Interface.RecycleViewOnItemClick;
 import com.example.giftsapp.R;
 import com.example.giftsapp.models.Mall;
+<<<<<<< HEAD
 import com.example.giftsapp.models.Shop;
+=======
+import com.squareup.picasso.Picasso;
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 
 import java.util.ArrayList;
 
@@ -46,11 +50,18 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.StoreViewHol
     public void onBindViewHolder(@NonNull StoreViewHolder holder, int position) {
 
         final Mall ss = stores.get(position);
+<<<<<<< HEAD
+=======
+        Picasso.get().load(ss.getUrlImage()).into(holder.img);
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 
 
 
 
+<<<<<<< HEAD
         holder.img.setImageResource(ss.getImage());
+=======
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 
         holder.title.setText(ss.getName() );
 

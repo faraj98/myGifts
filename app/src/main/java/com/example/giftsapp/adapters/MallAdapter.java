@@ -1,11 +1,17 @@
 package com.example.giftsapp.adapters;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.location.GnssAntennaInfo;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+=======
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,9 +21,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.giftsapp.Interface.RecycleViewOnItemClick;
 import com.example.giftsapp.R;
 import com.example.giftsapp.models.Mall;
+<<<<<<< HEAD
 
 import java.util.ArrayList;
 import java.util.function.Function;
+=======
+import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 
 public class MallAdapter extends RecyclerView.Adapter<MallAdapter.ShopViewHolder> {
 
@@ -46,6 +58,7 @@ public class MallAdapter extends RecyclerView.Adapter<MallAdapter.ShopViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull ShopViewHolder holder, int position) {
+<<<<<<< HEAD
 
         final Mall ss = malls.get(position);
 
@@ -59,6 +72,14 @@ public class MallAdapter extends RecyclerView.Adapter<MallAdapter.ShopViewHolder
 
 
 
+=======
+        final Mall ss = malls.get(position);
+        //holder.img.setImageResource(ss.getImage());
+        Picasso.get().load(ss.getUrlImage()).into(holder.img);
+
+        holder.title.setText(ss.getName() );
+
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
     }
 
     @Override

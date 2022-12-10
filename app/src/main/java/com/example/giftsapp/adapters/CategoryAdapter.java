@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.giftsapp.Interface.RecycleViewOnItemClick;
 import com.example.giftsapp.R;
 import com.example.giftsapp.models.Category;
 
@@ -19,10 +20,26 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
     Context context ;
     ArrayList<Category> categories ;
+<<<<<<< HEAD
+
+    public CategoryAdapter(Context context, ArrayList<Category> categories) {
+=======
+    RecycleViewOnItemClick recycleViewOnItemClick;
+
+    public CategoryAdapter(Context context, ArrayList<Category> categories, RecycleViewOnItemClick recycleViewOnItemClick) {
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
+        this.context = context;
+        this.categories = categories;
+        this.recycleViewOnItemClick = recycleViewOnItemClick;
+    }
 
     public CategoryAdapter(Context context, ArrayList<Category> categories) {
         this.context = context;
         this.categories = categories;
+    }
+
+    public CategoryAdapter() {
+
     }
 
     @NonNull
@@ -64,6 +81,12 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
             img = itemView.findViewById(R.id.category_img);
             title  =itemView.findViewById(R.id.category_title);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    recycleViewOnItemClick.onItemClickc(getAdapterPosition());
+                }
+            });
 
         }
     }

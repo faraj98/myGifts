@@ -23,12 +23,29 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     RecycleViewOnItemClick recycleViewOnItemClick;
     String mallName;
 
+<<<<<<< HEAD
+=======
+    public ProductAdapter(Context context, ArrayList<Product> products, RecycleViewOnItemClick recycleViewOnItemClick, String mallName) {
+        this.context = context;
+        this.products = products;
+        this.recycleViewOnItemClick = recycleViewOnItemClick;
+        this.mallName = mallName;
+    }
+
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
     public ProductAdapter(Context context, ArrayList<Product> products, String mallName) {
         this.context = context;
         this.products = products;
         this.mallName=mallName;
     }
 
+<<<<<<< HEAD
+=======
+    public ProductAdapter() {
+
+    }
+
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
     @NonNull
     @Override
     public ProductViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

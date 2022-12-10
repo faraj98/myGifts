@@ -21,10 +21,19 @@ public class LastOrderAdapter extends RecyclerView.Adapter<LastOrderAdapter.last
 
     Context context ;
     ArrayList<LastOrder> lastOrders ;
+<<<<<<< HEAD
+=======
+    boolean iscart=false;
+    boolean isfavourite=false;
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 
     public LastOrderAdapter(Context context, ArrayList<LastOrder> lastOrders) {
         this.context = context;
         this.lastOrders = lastOrders;
+    }
+
+    public LastOrderAdapter() {
+
     }
 
     @NonNull
@@ -49,14 +58,29 @@ public class LastOrderAdapter extends RecyclerView.Adapter<LastOrderAdapter.last
         holder.cart_shop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                if (iscart==false){
                 Toast.makeText(context, "lastorder cart", Toast.LENGTH_SHORT).show();
+                holder.cart_shop.setImageResource(R.drawable.ic_baseline_shopping_cart_24);
+                iscart=true;
+            }else {
+                    holder.cart_shop.setImageResource(R.drawable.shoppingcart);
+                    iscart=false;
+                }
             }
         });
 
         holder.heart_shop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "lastorder heart", Toast.LENGTH_SHORT).show();
+                if (isfavourite == false) {
+                    Toast.makeText(context, "lastorder heart", Toast.LENGTH_SHORT).show();
+                    holder.heart_shop.setImageResource(R.drawable.ic_baseline_favorite_24);
+                    isfavourite=true;
+                }else {
+                    holder.heart_shop.setImageResource(R.drawable.ic_baseline_favorite_border_24);
+                    isfavourite=false;
+                }
             }
         });
 

@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context=".MallActivity">
+=======
+    tools:context=".Activity.MallActivity">
+>>>>>>> 26f4474f4e235853898e68ae667fe679c02b6bde
 
     <androidx.recyclerview.widget.RecyclerView
 
